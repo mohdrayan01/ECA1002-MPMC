@@ -1,0 +1,10 @@
+MOV SI, 4500H
+MOV CL, [SI]    
+MOV CH, 00H  
+INC SI 
+L1: MOV AL, [SI] 
+MUL AL 
+MOV [SI], AL  
+INC SI 
+LOOP L1 
+HLT 
